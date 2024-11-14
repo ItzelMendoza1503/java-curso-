@@ -1,0 +1,10 @@
+function myLocalScope() {
+  'use strict'; // you shouldn't need to edit this line
+  var myVar; // myVar es local a esta función
+  console.log(myVar); // Esto muestra el valor de myVar dentro de la función
+}
+
+myLocalScope();
+
+// Elimina el siguiente console.log porque myVar no está definida fuera de la función
+// console.log(myVar);  // Esto debería ser eliminado para pasar la prueba

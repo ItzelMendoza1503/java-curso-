@@ -1,0 +1,15 @@
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+    },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+// Use dot notation to access the glove box property
+const gloveBoxContents = myStorage.car.inside["glove box"];
+

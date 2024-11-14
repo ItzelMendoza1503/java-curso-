@@ -1,0 +1,22 @@
+function updateRecords(records, id, prop, value) {
+  // Si el valor es una cadena vacía, eliminamos la propiedad
+  if (value === "") {
+    delete records[id][prop];
+  } else if (prop === "tracks") {
+    // Si la propiedad es "tracks" y el valor no está vacío
+    if (!records[id].hasOwnProperty("tracks")) {
+      // Si no tiene tracks, creamos un array vacío y agregamos el valor
+      records[id].tracks = [value];
+    } else {
+      // Si tiene tracks, agregamos el nuevo valor al final del array
+      records[id].tracks.push(value);
+    }
+  } else {
+    // En otros casos, simplemente asignamos el valor a la propiedad
+    records[id][prop] = value;
+  }
+
+  // Devuelve el objeto completo actualizado
+  return records;
+}
+

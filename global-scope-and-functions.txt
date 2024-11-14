@@ -1,0 +1,22 @@
+// Define myGlobal correctly using let or const
+let myGlobal = 10;  // Usamos let para declarar myGlobal con un valor de 10
+
+// Define oopsGlobal as a global variable
+let oopsGlobal;  // Declara oopsGlobal fuera de cualquier función
+
+function fun1() {
+  // Assign 5 to oopsGlobal here
+  oopsGlobal = 5;  // Esto ahora asigna correctamente el valor 5 a la variable global
+}
+
+// Only change code above this line
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}

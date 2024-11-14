@@ -1,0 +1,9 @@
+// Define the function processArg which processes an argument and returns a value
+function processArg(num) {
+  return num - 5;  // Subtracts 5 from the input number, so processArg(7) will return 2
+}
+
+// Call the function with the argument 7 and assign the returned value to the variable processed
+var processed = processArg(7);  // The return value of processArg(7) is 2, which is assigned to processed
+
+console.log(processed);  // This should output 2
